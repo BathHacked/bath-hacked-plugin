@@ -1,0 +1,136 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
+
+  & {
+    zoom:1;
+  }
+}
+
+@mixin break-below($break) {
+  @media (max-width: $break - 1px) {
+    @content;
+  }
+}
+@mixin break-above($break) {
+  @media (min-width: $break) {
+    @content;
+  }
+}
+
+@mixin break-between($break-min, $break-max) {
+  @media (min-width: $break-min) and (max-width: $break-max - 1px) {
+    @content;
+  }
+}
+
+@mixin vbreak-below($break) {
+  @media (max-height: $break - 1px) {
+    @content;
+  }
+}
+@mixin vbreak-above($break) {
+  @media (min-height: $break) {
+    @content;
+  }
+}
+
+@mixin vbreak-between($break-min, $break-max) {
+  @media (min-height: $break-min) and (max-height: $break-max - 1px) {
+    @content;
+  }
+}
+
+@mixin row($gutter:3%, $respond:false) {
+
+  @if $respond {
+
+    @include break-above($respond) {
+      @include clearfix;
+      margin-left: -$gutter;
+    }
+
+  } @else {
+
+    @include clearfix;
+    margin-left: -$gutter;
+
+  }
+}
+
+@mixin col($count, $cols, $gutter:3%, $respond: false) {
+
+  @if $respond {
+
+    @include break-above($respond) {
+      width: (100% / $cols) * $count - $gutter;
+      margin-left: $gutter;
+      float: left;
+      clear: none;
+
+      @if $count == $cols {
+        float: none;
+        clear: both;
+      }
+    }
+
+  } @else {
+
+    width: (100% / $cols) * $count - $gutter;
+    margin-left: $gutter;
+    float: left;
+    clear: none;
+
+    @if $count == $cols {
+      float: none;
+      clear: both;
+    }
+  }
+
+}
+
+@mixin full {
+  width: auto !important;
+  float: none !important;
+  clear: both !important;
+  margin-left: 0 !important;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin icon($name) {
+  display: block;
+  text-indent: -1000em;
+  @include icons-sprite($name);
+  width: icons-sprite-width($name);
+  height: icons-sprite-height($name);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
