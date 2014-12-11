@@ -18,6 +18,12 @@ Use this plugin at your own risk.
 
 ## Installation
 
+- Download the repository ZIP file.
+- Extract the ZIP contents somewhere.
+- Rename the ```bath-hacked-plugin-master``` folder to ```bath-hacked-plugin```.
+- Upload the folder to your Wordpress plugin folder ```wp-content/plugins/```.
+- Now activate the plugin in your WordPress dashboard.
+
 ### Via WordPress
 
 Download the repository as a ZIP file. Navigate to ```"Plugins > Add New"``` within your WordPress dashboard. 
@@ -77,7 +83,8 @@ Copyright (c) 2014 Mark Owen & Bath: Hacked
 
 Please consult individual datasets at [Bath: Hacked](https://www.bathhacked.org/) for their licensing information.
 
-Your right to use this software does not confer any right to use the data provided by Bath: Hacked or Bath & North East Somerset Council.
+Your right to use this software does not necessarily confer any right to use the data provided by 
+Bath: Hacked or Bath & North East Somerset Council.
 
 ## Plugin License
 
