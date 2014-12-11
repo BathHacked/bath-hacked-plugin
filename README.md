@@ -20,7 +20,7 @@ Use this plugin at your own risk.
 
 - Download the repository ZIP file.
 - Extract the ZIP contents somewhere.
-- Rename the ```bath-hacked-plugin-master``` folder to ```bath-hacked-plugin```.
+- Rename the extracted folder to ```bath-hacked-plugin```.
 - Upload the folder to your Wordpress plugin folder ```wp-content/plugins/```.
 - Now activate the plugin in your WordPress dashboard.
 
