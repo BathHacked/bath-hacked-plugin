@@ -24,11 +24,6 @@ Use this plugin at your own risk.
 - Upload the folder to your Wordpress plugin folder ```wp-content/plugins/```.
 - Now activate the plugin in your WordPress dashboard.
 
-### Via WordPress
-
-Download the repository as a ZIP file. Navigate to ```"Plugins > Add New"``` within your WordPress dashboard. 
-Upload the ZIP file, install it & activate the plugin.
-
 ## Configuration
 
 At present, there is a single configuration option under ```"Settings > Bath: Hacked"```.
