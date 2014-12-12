@@ -3,7 +3,7 @@
 
 A WordPress plugin for displaying visualisations of data found in the 
 Bath & North East Somerset [community datastore](https://data.bathhacked.org/) which is curated 
-by the lovely people of [Bath: Hacked](https://www.bathhacked.org/).
+by the lovely people of [Bath: Hacked](http://www.bathhacked.org/).
 
 ## Status
 
@@ -21,7 +21,7 @@ Use this plugin at your own risk.
 - Download the repository ZIP file.
 - Extract the ZIP contents somewhere.
 - Rename the extracted folder to ```bath-hacked-plugin```.
-- Upload the folder to your Wordpress plugin folder ```wp-content/plugins/```.
+- Upload the folder to your WordPress plugin folder ```wp-content/plugins/```.
 - Now activate the plugin in your WordPress dashboard.
 
 ## Configuration
@@ -76,7 +76,7 @@ Copyright (c) 2014 Mark Owen & Bath: Hacked
 
 ## Data License
 
-Please consult individual datasets at [Bath: Hacked](https://www.bathhacked.org/) for their licensing information.
+Please consult individual datasets at [Bath: Hacked](http://www.bathhacked.org/) for their licensing information.
 
 Your right to use this software does not necessarily confer any right to use the data provided by 
 Bath: Hacked or Bath & North East Somerset Council.
